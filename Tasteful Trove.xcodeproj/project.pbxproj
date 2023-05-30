@@ -52,6 +52,7 @@
 		B593AD622A20B27800DFDF52 /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593AD612A20B27800DFDF52 /* CustomFonts.swift */; };
 		B593AD642A24D61E00DFDF52 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593AD632A24D61E00DFDF52 /* SignupViewController.swift */; };
 		B593AD662A25A44300DFDF52 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593AD652A25A44300DFDF52 /* WelcomeViewController.swift */; };
+		B593AD6D2A25AF5C00DFDF52 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593AD6C2A25AF5C00DFDF52 /* HomeViewController.swift */; };
 		DE310C84CFF924C0EA06C8E1 /* Pods_Tasteful_TroveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DDB4D567B00C6893F436F6 /* Pods_Tasteful_TroveTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +125,7 @@
 		B593AD612A20B27800DFDF52 /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
 		B593AD632A24D61E00DFDF52 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		B593AD652A25A44300DFDF52 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		B593AD6C2A25AF5C00DFDF52 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BDE36F286CCD08FDBF556FE7 /* Pods-Tasteful Trove-Tasteful TroveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tasteful Trove-Tasteful TroveUITests.release.xcconfig"; path = "Target Support Files/Pods-Tasteful Trove-Tasteful TroveUITests/Pods-Tasteful Trove-Tasteful TroveUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CCBEDAAD47A7C7A3C27BC3C4 /* Pods-Tasteful Trove.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tasteful Trove.debug.xcconfig"; path = "Target Support Files/Pods-Tasteful Trove/Pods-Tasteful Trove.debug.xcconfig"; sourceTree = "<group>"; };
 		D72395227CAEF52FE90CEAFD /* Pods-Tasteful Trove-Tasteful TroveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tasteful Trove-Tasteful TroveUITests.debug.xcconfig"; path = "Target Support Files/Pods-Tasteful Trove-Tasteful TroveUITests/Pods-Tasteful Trove-Tasteful TroveUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				B593AD212A2087A700DFDF52 /* Fonts */,
 				B593AD5A2A209AF900DFDF52 /* Helper */,
 				B593AC932A1FDFC600DFDF52 /* Login Module */,
+				B593AD672A25AF0600DFDF52 /* HomeScreen */,
 				B593AC632A1FDF8700DFDF52 /* AppDelegate.swift */,
 				B593AC652A1FDF8700DFDF52 /* SceneDelegate.swift */,
 				B593AD582A20979B00DFDF52 /* SplashScreenViewController.swift */,
@@ -242,8 +245,8 @@
 			isa = PBXGroup;
 			children = (
 				B593AC972A1FE00800DFDF52 /* Model */,
-				B593AC962A1FDFF000DFDF52 /* ViewModel */,
 				B593AC952A1FDFEB00DFDF52 /* View */,
+				B593AC962A1FDFF000DFDF52 /* ViewModel */,
 				B593AC942A1FDFDA00DFDF52 /* Controller */,
 			);
 			path = "Login Module";
@@ -323,6 +326,46 @@
 				B593AD612A20B27800DFDF52 /* CustomFonts.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		B593AD672A25AF0600DFDF52 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B593AD6A2A25AF3000DFDF52 /* Model */,
+				B593AD682A25AF1800DFDF52 /* View */,
+				B593AD692A25AF2700DFDF52 /* ViewModel */,
+				B593AD6B2A25AF3600DFDF52 /* Controller */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		B593AD682A25AF1800DFDF52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B593AD692A25AF2700DFDF52 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B593AD6A2A25AF3000DFDF52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B593AD6B2A25AF3600DFDF52 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B593AD6C2A25AF5C00DFDF52 /* HomeViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -562,6 +605,7 @@
 				B593AD572A20951E00DFDF52 /* LoginViewController.swift in Sources */,
 				B593AD602A20B1AD00DFDF52 /* ColorConstants.swift in Sources */,
 				B593AC642A1FDF8700DFDF52 /* AppDelegate.swift in Sources */,
+				B593AD6D2A25AF5C00DFDF52 /* HomeViewController.swift in Sources */,
 				B593AD592A20979B00DFDF52 /* SplashScreenViewController.swift in Sources */,
 				B593AD5E2A20A89800DFDF52 /* LoginLabels.swift in Sources */,
 				B593AC662A1FDF8700DFDF52 /* SceneDelegate.swift in Sources */,
