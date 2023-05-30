@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q6D-jr-Zqc">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pacifico-Regular 2.ttf">
+            <string>Pacifico-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SplashScreenViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SplashScreenViewController" customModule="Tasteful_Trove" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="y3k-rh-gLJ">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" name="PastleGreen"/>
+                            </imageView>
+                            <view alpha="0.75" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lcb-fe-AU3" userLabel="backround layover">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" name="PastleGreen"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tasteful Trove" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ikh-9o-Q1k">
+                                <rect key="frame" x="48.666666666666657" y="384" width="296" height="84.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="48"/>
+                                <color key="textColor" name="SophisticatedSlatePrimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="y3k-rh-gLJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6zr-Ej-crR"/>
+                            <constraint firstAttribute="bottom" secondItem="Lcb-fe-AU3" secondAttribute="bottom" id="EHB-Hw-C3q"/>
+                            <constraint firstItem="Ikh-9o-Q1k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oa9-Q8-k31"/>
+                            <constraint firstItem="Lcb-fe-AU3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Q12-Q5-12u"/>
+                            <constraint firstItem="y3k-rh-gLJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VXM-Bo-MVs"/>
+                            <constraint firstItem="Lcb-fe-AU3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="d7t-zO-DHr"/>
+                            <constraint firstAttribute="trailing" secondItem="y3k-rh-gLJ" secondAttribute="trailing" id="hVs-OX-LfF"/>
+                            <constraint firstItem="Ikh-9o-Q1k" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hr3-o9-yOo"/>
+                            <constraint firstItem="Ikh-9o-Q1k" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.753181" id="o6a-dC-e1t"/>
+                            <constraint firstAttribute="bottom" secondItem="y3k-rh-gLJ" secondAttribute="bottom" id="pGI-UF-0cL"/>
+                            <constraint firstItem="Lcb-fe-AU3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yo7-0r-KQh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bgE-aQ-WfJ"/>
+                    <connections>
+                        <outlet property="appNameLabel" destination="Ikh-9o-Q1k" id="Taa-mV-a3t"/>
+                        <outlet property="backgroundImage" destination="y3k-rh-gLJ" id="F4Q-tj-Lj3"/>
+                        <outlet property="backgroundLayover" destination="Lcb-fe-AU3" id="ySe-q5-Ibj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="22" y="-2"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cOZ-2P-ywS">
+            <objects>
+                <navigationController id="Q6D-jr-Zqc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ohb-QN-c97">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="SophisticatedSlatePrimary"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kcS-e0-kYP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0UC-cz-RWJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-738" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="2830" height="2000"/>
+        <namedColor name="PastleGreen">
+            <color red="0.50588235294117645" green="0.72941176470588232" blue="0.70588235294117652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SophisticatedSlatePrimary">
+            <color red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

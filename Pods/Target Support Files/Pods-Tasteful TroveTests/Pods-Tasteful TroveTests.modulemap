@@ -1,0 +1,6 @@
+framework module Pods_Tasteful_TroveTests {
+  umbrella header "Pods-Tasteful TroveTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
