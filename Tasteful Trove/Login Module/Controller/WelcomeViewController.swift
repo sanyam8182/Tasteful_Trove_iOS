@@ -53,9 +53,9 @@ class WelcomeViewController: UIViewController {
     
     func initialize() {
         
-        signUpButton.setAttributedTitle(loginLabels.signUp, with: loginLabels.signUp, highlightColor: nil, textColor: colorConstants.PastleGreen, font: customFonts.LatoBold15)
+        signUpButton.setAttributedTitle(loginLabels.signUp, with: loginLabels.signUp, highlightColor: nil, textColor: colorConstants.PastleGreen, font: customFonts.MulishBold(size: 15))
         
-        signInButton.setAttributedTitle( loginLabels.signin, with: loginLabels.signin, highlightColor: nil, textColor: colorConstants.ChicIvoryPrimary, font: customFonts.LatoBold15)
+        signInButton.setAttributedTitle( loginLabels.signin, with: loginLabels.signin, highlightColor: nil, textColor: colorConstants.ChicIvoryPrimary, font: customFonts.MulishBold(size: 15))
         
     }
     func layerUpdates(){

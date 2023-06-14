@@ -51,11 +51,11 @@ class SignupViewController: UIViewController {
         emailTextField.delegate = self
         passwordTextField.delegate = self
         
-        usernameTextField.setAttributedPlaceholder(loginLabels.usernamePlaceholder, textColor: colorConstants.SophisticatedSlatePrimary?.withAlphaComponent(0.5), font: customFonts.LatoRegular14)
+        usernameTextField.setAttributedPlaceholder(loginLabels.usernamePlaceholder, textColor: colorConstants.SophisticatedSlatePrimary?.withAlphaComponent(0.5), font: customFonts.MulishMedium(size: 14))
         
-        emailTextField.setAttributedPlaceholder(loginLabels.emailPlaceholder, textColor: colorConstants.SophisticatedSlatePrimary?.withAlphaComponent(0.5), font: customFonts.LatoRegular14)
+        emailTextField.setAttributedPlaceholder(loginLabels.emailPlaceholder, textColor: colorConstants.SophisticatedSlatePrimary?.withAlphaComponent(0.5), font: customFonts.MulishMedium(size: 14))
         
-        passwordTextField.setAttributedPlaceholder(loginLabels.passwordPlaceholder, textColor: colorConstants.SophisticatedSlatePrimary?.withAlphaComponent(0.5), font: customFonts.LatoRegular14)
+        passwordTextField.setAttributedPlaceholder(loginLabels.passwordPlaceholder, textColor: colorConstants.SophisticatedSlatePrimary?.withAlphaComponent(0.5), font: customFonts.MulishMedium(size: 14))
         
     }
     

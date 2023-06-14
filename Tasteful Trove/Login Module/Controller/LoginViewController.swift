@@ -63,17 +63,17 @@ class LoginViewController: UIViewController {
         usernameTextField.delegate = self
         passwordTextField.delegate = self
         
-        forgotPasswordLabel.setAttributedText(loginLabels.forgotPassword, with: loginLabels.forgotPassword, highlightColor: nil, textColor: colorConstants.SophisticatedSlatePrimary, font: customFonts.LatoBold15)
+        forgotPasswordLabel.setAttributedText(loginLabels.forgotPassword, with: loginLabels.forgotPassword, highlightColor: nil, textColor: colorConstants.SophisticatedSlatePrimary, font: customFonts.MulishSemibold(size: 15))
         
-        welcomeText.setAttributedText(loginLabels.loginWelcome, with: loginLabels.loginWelcome, highlightColor: nil, textColor: colorConstants.SophisticatedSlatePrimary, font: customFonts.LatoRegular16)
+        welcomeText.setAttributedText(loginLabels.loginWelcome, with: loginLabels.loginWelcome, highlightColor: nil, textColor: colorConstants.SophisticatedSlatePrimary, font: customFonts.MulishSemibold(size: 16))
         
-        usernameTextField.setAttributedPlaceholder(loginLabels.usernamePlaceholder, textColor: colorConstants.SophisticatedSlatePrimary?.withAlphaComponent(0.5), font: customFonts.LatoRegular14)
+        usernameTextField.setAttributedPlaceholder(loginLabels.usernamePlaceholder, textColor: colorConstants.SophisticatedSlatePrimary?.withAlphaComponent(0.5), font: customFonts.MulishMedium(size: 14))
         
-        passwordTextField.setAttributedPlaceholder(loginLabels.passwordPlaceholder, textColor: colorConstants.SophisticatedSlatePrimary?.withAlphaComponent(0.5), font: customFonts.LatoRegular14)
+        passwordTextField.setAttributedPlaceholder(loginLabels.passwordPlaceholder, textColor: colorConstants.SophisticatedSlatePrimary?.withAlphaComponent(0.5), font: customFonts.MulishMedium(size: 14))
     
-        createAccountLabel.setAttributedText(loginLabels.createAccount, with: loginLabels.signUp, highlightColor: nil, textColor: colorConstants.SophisticatedSlatePrimary, font: customFonts.LatoBlack15)
+        createAccountLabel.setAttributedText(loginLabels.createAccount, with: loginLabels.signUp, highlightColor: nil, textColor: colorConstants.SophisticatedSlatePrimary, font: customFonts.MulishBold(size: 15))
         
-        signInButton.setAttributedTitle( loginLabels.signin, with: loginLabels.signin, highlightColor: nil, textColor: colorConstants.ChicIvoryPrimary, font: customFonts.LatoRegular15, underline: false, underlineColor: colorConstants.ChicIvoryPrimary)
+        signInButton.setAttributedTitle( loginLabels.signin, with: loginLabels.signin, highlightColor: nil, textColor: colorConstants.ChicIvoryPrimary, font: customFonts.MulishBold(size: 15), underline: false, underlineColor: colorConstants.ChicIvoryPrimary)
                                             
         loginElementsView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(closeKeyboard)))
         

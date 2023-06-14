@@ -10,18 +10,26 @@ import UIKit
 
 class CustomFonts {
     
-    let LatoBlack14 = UIFont(name: "Lato-Black", size: 14)!
-    let LatoBlack15 = UIFont(name: "Lato-Black", size: 15)!
+    //Mulish font
+    func MulishBold(size: CGFloat) -> UIFont{
+        UIFont(name: "Mulish-Bold", size: size)!
+    }
+    func MulishMedium(size: CGFloat) -> UIFont{
+        UIFont(name: "Mulish-Medium", size: size)!
+    }
+    func MulishSemibold(size: CGFloat) -> UIFont{
+        UIFont(name: "Mulish-SemiBold", size: size)!
+    }
     
-    let LatoRegular14 = UIFont(name: "Lato-Regular", size: 14)!
-    let LatoRegular15 = UIFont(name: "Lato-Regular", size: 15)!
-    let LatoRegular16 = UIFont(name: "Lato-Regular", size: 16)!
+    //Playfair font
+    func PlayfairBlack(size: CGFloat) -> UIFont{
+        UIFont(name: "PlayfairDisplay-Black", size: size)!
+    }
     
-    let LatoBold15 = UIFont(name: "Lato-Bold", size: 15)!
-    let LatoBold24 = UIFont(name: "Lato-Bold", size: 24)!
+    //DM Sans font
     
-    
-    //let PlayfairDisplayBlack48 = UIFont(name: "PlayfairDisplay-Black", size: 48)!
-    
+    func DMSansMedium(size: CGFloat) -> UIFont{
+        UIFont(name: "DMSans-Medium", size: size)!
+    }
     
 }
